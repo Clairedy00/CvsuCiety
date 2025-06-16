@@ -1,0 +1,110 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: rgb(51, 50, 49); 
+    overflow-x: hidden;
+    font-family:system-ui ,'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+          
+header {
+    display: block;
+    position: sticky;
+    top: 0;
+    color: rgb(213, 213, 129);
+    height: 50px;
+    padding: 20px;
+    z-index: 10;
+    bottom: 20px;
+}
+
+
+.header-nav {
+    display: flex;
+    position: absolute;
+    left: 250px;
+    bottom: 35px;
+
+}
+
+a {
+    text-decoration: none;
+    padding-right: 40px;
+    margin-right: 30px;
+    
+}
+
+a:link, a:visited {
+    color: whitesmoke;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.searchbar {
+    display: flex;
+    position: relative;
+    float: right;  
+    border: none;
+    border-radius: 10px;
+    height: 25px;
+    right: 230px;
+    bottom: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+.button {
+    display: inline;
+    position: sticky;
+    padding: 5px;
+    background-color: rgb(0, 248, 0);
+    color: rgb(0, 0, 0);
+    top: 190px;
+    border: 1px solid black;
+    border-radius:10px;
+}
+
+.main-content {
+    display: block;
+    position: relative;
+    left: 100px;
+    padding: 20px;
+    border: 1xp solid black;
+    
+}
+
+section {
+    display: block;
+    position: relative;
+    padding: 100px;
+}
+
+.column {
+    float: left;
+    align-items: center;
+    width: 30%;
+    padding: 5px;
+   
+}
+
+.row {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+footer {
+    display: flex;
+    position:relative;
+    opacity: 50%;
+    justify-content: center; 
+    align-items: center;    
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: rgb(213, 213, 129);
+    height: 80px;
+    padding: 10px;
+    z-index: 10;
+}
