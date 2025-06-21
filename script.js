@@ -1,4 +1,4 @@
-
+// time effect
 function timeAgo(timestamp) {
     const now = new Date();
     const past = new Date(timestamp);
@@ -45,4 +45,31 @@ document.addEventListener('DOMContentLoaded', function() {
     
   
     setInterval(updateAllTimestamps, 60000);
+});
+
+
+// Hover effect sa button
+document.addEventListener('DOMContentLoaded', () => {
+  const buttons = document.querySelectorAll('.sidebar button');
+  buttons.forEach(button => {
+    button.style.backgroundColor = '#f0f0f0';
+    button.style.border = 'none';
+    button.style.padding = '10px';
+    button.style.cursor = 'pointer';
+    button.style.width = '100%';
+    button.style.marginBottom = '10px';
+
+    button.addEventListener('mouseenter', () => {
+      button.style.backgroundColor = '#007bff';
+      button.style.color = '#fff';
+      button.style.transform = 'scale(1.03)';
+      button.style.transition = 'all 0.2s ease';
+    });
+
+    button.addEventListener('mouseleave', () => {
+      button.style.backgroundColor = '#f0f0f0';
+      button.style.color = '#000';
+      button.style.transform = 'scale(1)';
+    });
+  });
 });
