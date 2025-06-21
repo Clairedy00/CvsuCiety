@@ -1,3 +1,84 @@
+function displayArticle(index) {
+  const articles = [
+    {
+      title: "Tagisan ng obra, kulay, at talento sa LCAF 2025",
+      author: "Mae Adelaine Alarcon",
+      photo: "Claire Dytioco",
+      content: `Tahimik ngunit nababalot ng kulay ang aklatan ng Cavite State University Imus campus para sa
+	pencil drawing, charcoal rendering, poster making, at live painting contest para sa ginanap na
+	Local Culture and Arts Festival 2025. Nagsimula ang paggawa ng obra umaga noong ika-11 ng
+	Marso, unang araw ng selebrasyon.
+	Sa pamamagitan ng iba’t ibang estilo ng pagguhit, gamit ng mga pencil drawing contestants ang
+	tropeyo and medalya bilang kanilang modelo at reperensiya, habang ang tema naman ng Local
+	Culture and Arts Festival: “Kultura’t Sining, Tanglaw ng Makabagong Panahon” ang naging
+	inspirasyon ng mga poster making contestants.
+	Samantala, imahe naman ng tinaguriang Queen of the Philippine Cinema na si Ginang Gloria
+	Romero ang naging basehan ng mga charcoal rendering contestants. Panghuli ay ang entrada
+	naman ng CvSU-Imus ang ibinida ng mga live painting contestants.
+	Sa kabila ng tumatakbong oras, nasungkit ni Aliana Keith Morales mula sa ALTAS ang ginto sa
+	kategorya ng pencil drawing contest. Mula rin sa ALTAS, idineklara ring kampeon na si John
+	Paul Parale sa poster making contest. Nagwagi rin si Jamaica Honrales sa kategorya ng live
+	painting at nakatanggap ng 91.5% bilang iskor mula sa mga hurado. Panghuli ay natamo rin ni
+	Binibining Micky Ann Prestoza ng Educators’ Guild For Excellence ang panalo sa charcoal
+	rendering.
+	Samantala, sina Binibining Krisha Rodis, Ginoong Noah Manalo, at mga naging Presidente ng
+	ALTAS Visual Arts Organization: Binibining Vejee Lavendia, at BInibining Zyrene Valvoncha ang
+	mga nagsilbing hurado sa visual arts category`,
+      img: "art1.png"
+    },
+    {
+      title: "Laban ng de Kuwerdas na Instrumento ngayong LCAF 2025",
+      author: "Mae Adelaine Alarcon",
+      photo: "Claire Dytioco",
+      content: `Nota mula sa iba’t ibang instrumento ang bumalot sa Cavite State University Imus Gymnasium
+	noong ika-13 ng Marso sa huling araw ng Local Culture and Arts Festival 2025. Nagdaos ng
+	patimpalak sa musical instruments sa larangan ng violin, classic guitar, at banduria.
+	Bilang mga kampeon, nasungkit nina Christofer Marky C. Gomez at Jeremie A. Canosa ang
+	ginto sa pagtugtog ng banduria at classic guitar sa kantang “Karatong” na may 95.5% na
+	kabuuang iskor.
+	Idineklara namang wagi si John Josel Parole sa pagtugtog ng kantang “Ride Home” ng
+	Ben&Ben gamit ang violin na nakatanggap ng 94% na iskor.
+	Sa panghuli, pinarangalan din ng ginto si Adriane Ravil G. Reliosa sa pagtugtog ng classic
+	guitar sa kantang “Kanlungan” ni Noel Cabangon at nakatanggap naman ng 95.5% mula sa
+	mga hurado.
+	Naghatid ng tagos-pusong intermission number ang isa sa mga kalahok: Ginoong John Jose
+	Parole gamit ang naman kaniyang keyboard piano, itinanghal niya ang kantang “Araw Gabi”
+	bago ang pag-kilala sa mga nagwaging kalahok sa iba’t ibang instrumento.
+	Samantala, nakatanggap naman ng mga sertipiko ng pagkilala ang mga huradong sina:
+	Ginoong Paul John Esternino at Ginoong Jasper T. Legaspi. Malugod ding nagbigay ng mga
+	komento at payo si Ginoong Esternino sa bawat kalahok mula sa pagpili ng kantang itatanghal
+	hanggang sa mga bilis ng ritmo..`,
+      img: "art2.jpg"
+    },
+    {
+      title: "Sa Pag-Iyak at Pag-Tawa, sa Sinag-Tala ang Korona",
+      author: "Mae Adelaine Alarcon",
+      photo: "The Flare",
+      content: `Hindi nagpahuli ang Dramatic Arts Contest na ginanap noong ika-11 ng Marso 2025 sa
+	CvSU-Imus Gymnasium. Ipinamalas ng mga aktor mula sa Sinag-Tala Performing Arts Group
+	ang kanilang mga emosyon sa sweet play dialogue na pinamagatang “Oras”. Ibinase ang
+	naging dula sa tema ng Local Culture and Arts Festival: “Kultura’t Sining, Tanglaw ng
+	Makabagong Panahon”.
+	Matapos naman ang sweet play dialogue ay ipinaabot din ng Sinag-Tala sa puso ng mga
+	manonood ang isang musical na pinamagatang “Kumot”. Sa huli ay idineklarang kampyon ang
+	tanging kalahok na Sinag-Tala Performing Arts Group sa kategorya ng sweet play dialogue at
+	sweet play musical. Inaasahan na ang grupo ay ilalaban sa CvSU Main Campus sa Indang.
+	Gumanap na mga hurado sina Binibining Joanna Mae Anglit at Ginoong Kenneth Tolosa.
+	Nagkaisa naman ang mga Kabsuhenyo sa pag-tawa at pag-suporta sa mga naging aktor ng
+	dula`,
+      img: "art3.png"
+    }
+  ];
+
+  const article = articles[index - 1];
+  if (!article) return;
+
+  document.getElementById("article-title").innerHTML = `<i>${article.title}</i>`;
+  document.getElementById("article-author").textContent = `By ${article.author}`;
+  document.getElementById("article-photo").textContent = `Photo Courtesy: ${article.photo}`;
+  document.getElementById("article-content").textContent = article.content;
+  document.getElementById("article-img").src = article.img;
+}
 // time effect
 function timeAgo(timestamp) {
     const now = new Date();
