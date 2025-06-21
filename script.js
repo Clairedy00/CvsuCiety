@@ -17,7 +17,7 @@ const articles = [
             Panghuli ay natamo rin ni Binibining Micky Ann Prestoza ng Educators’ Guild For Excellence ang panalo sa charcoal rendering.
             Samantala, sina Binibining Krisha Rodis, Ginoong Noah Manalo, at mga naging Presidente ng ALTAS Visual Arts Organization: Binibining Vejee Lavendia, at Binibining Zyrene Valvoncha ang mga nagsilbing hurado sa visual arts category.
             <br><br>
-            <img src="ART1.Cover" alt="ali" style="width: 100%; height: auto;" />
+            <img src="ART1.Cover.png" alt="ali" style="width: 100%; height: auto;" />
         `
     }
 ];
