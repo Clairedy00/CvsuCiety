@@ -5,58 +5,163 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CvSUciety News</title>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="icon.png" />
+    <link rel="icon" type="image/x-icon" href="images/icon.png" />
         <link rel="stylesheet" href="stylesheet.css" /> 
 </head>
 <body>
     <header>
         <h2 style="padding-left: 15px;" id = "cvsuciety">CvSUciety</h2>
         <nav class="header-nav">
-            <a href="cvsuciety.html" style="color: black; font-family: 'Century Gothic', 'Avant Garde', sans-serif;">HOME</a>
+            <a href="index.html" style="color: black; font-family: 'Century Gothic', 'Avant Garde', sans-serif;">HOME</a>
             <a href="latestnews.html" style="color: black; font-family: 'Century Gothic', 'Avant Garde', sans-serif;">LATEST NEWS</a>
             <a href="aboutus.html" style="color: black; font-family: 'Century Gothic', 'Avant Garde', sans-serif;">ABOUT US</a>
         </nav>
             <input class="searchbar" type="text" placeholder="Search" />
     </header>
  <!-- main content area-->
-    <div class="main-container">
-        <section class="main-article" id="main-article">
-            <img id="article-img-cover" img src="ART1_Cover.png" alt="LCAF2025" />
-            <h1 id="article-title">
-                <i> Tagisan ng obra, kulay, at talento sa LCAF 2025 </i>
-            </h1>
-            <h4 id = "article-label"> by Mae Adelaine Alarcon </h4>
-            <h4 id = "article-label"> Photo Courtesy: Claire Dytioco </h4>
-            <p id="article-content">
-                Tahimik ngunit nababalot ng kulay ang aklatan ng Cavite State University Imus campus para sa pencil drawing,
-                charcoal rendering, poster making, at live painting contest para sa ginanap na Local Culture and Arts Festival 2025.
-                <br><br>
-                Nagsimula ang paggawa ng obra umaga noong ika-11 ng Marso, unang araw ng selebrasyon.
-                Sa pamamagitan ng iba’t ibang estilo ng pagguhit, gamit ng mga pencil drawing contestants ang tropeyo and medalya bilang kanilang modelo at reperensiya, habang ang tema naman ng Local Culture and Arts Festival: “Kultura’t Sining, Tanglaw ng Makabagong Panahon” ang naging inspirasyon ng mga poster making contestants.
-                <br><br>
-                Samantala, imahe naman ng tinaguriang Queen of the Philippine Cinema na si Ginang Gloria Romero ang naging basehan ng mga charcoal rendering contestants. Panghuli ay ang entrada naman ng CvSU-Imus ang ibinida ng mga live painting contestants.
-                Sa kabila ng tumatakbong oras, nasungkit ni Aliana Keith Morales mula sa ALTAS ang ginto sa kategorya ng pencil drawing contest. Mula rin sa ALTAS, idineklara ring kampeon na si John Paul Parale sa poster making contest. Nagwagi rin si Jamaica Honrales sa kategorya ng live painting at nakatanggap ng 91.5% bilang iskor mula sa mga hurado.
-                <br><br>
-                Panghuli ay natamo rin ni Binibining Micky Ann Prestoza ng Educators’ Guild For Excellence ang panalo sa charcoal rendering.
-                Samantala, sina Binibining Krisha Rodis, Ginoong Noah Manalo, at mga naging Presidente ng ALTAS Visual Arts Organization: Binibining Vejee Lavendia, at Binibining Zyrene Valvoncha ang mga nagsilbing hurado sa visual arts category.
-            </p>
-            <img id="article-img" img src="ART1.jpeg" alt="CAF_Contestants" />
-        </section>
+    <main>
+      <section id="main-article">
+        <img id="image" src="images/pencildrawing.jpg" alt="Main Article Image">
+        <h2 id="title">Tagisan ng obra, kulay, at talento sa LCAF 2025</h2>
+        <p id="author">By Mae Adelina Alarcon | May 05, 2025</p>
+        <p id="content">
+          Tahimik ngunit nababalot ng kulay ang aklatan ng Cavite State University Imus campus para sa
+        pencil drawing, charcoal rendering, poster making, at live painting contest para sa ginanap na
+        Local Culture and Arts Festival 2025. Nagsimula ang paggawa ng obra umaga noong ika-11 ng
+        Marso, unang araw ng selebrasyon.
+        Sa pamamagitan ng iba’t ibang estilo ng pagguhit, gamit ng mga pencil drawing contestants ang
+        tropeyo and medalya bilang kanilang modelo at reperensiya, habang ang tema naman ng Local
+        Culture and Arts Festival: “Kultura’t Sining, Tanglaw ng Makabagong Panahon” ang naging
+        inspirasyon ng mga poster making contestants.
+        Samantala, imahe naman ng tinaguriang Queen of the Philippine Cinema na si Ginang Gloria
+        Romero ang naging basehan ng mga charcoal rendering contestants. Panghuli ay ang entrada
+        naman ng CvSU-Imus ang ibinida ng mga live painting contestants.
+        </p>
+      </section>
 
-        <!-- side article *put pictures for small article and a short headline-->
-        <aside class="side-article">
-            <h3>Related Articles</h3>
-            <div class="sidebar"><button onclick="displayArticle(1)">ARTICLE 1</button></div>
-            <div class="sidebar"><button onclick="displayArticle(2)">ARTICLE 2</button></div>
-            <div class="sidebar"><button onclick="displayArticle(3)">ARTICLE 3</button></div>
-            <div class="sidebar"><button onclick="displayArticle(4)">ARTICLE 4</button></div>
-        </aside>
-    </div>
-<!--SCRIPT FOR THE ARTICLES atleast 4side articles
-features needed:
--time posted
--clickable content
--flashes content as the main content -->
+      <aside class="sidebar">
+        <h3>OTHER ARTICLES</h3>
+        <div class="related" data-id="1">
+             <img src="images/instruments.jpg" alt="Image">
+          <p>“Laban ng de Kuwerdas na Instrumento ngayong LCAF 2025”<br><small>May 05, 2025</small></p>
+        </div>
+        <div class="related" data-id="2">
+             <img src="images/sweetplay.jpg" alt="Image">
+          <p>“Sa Pag-Iyak at Pag-Tawa, sa Sinag-Tala ang Korona”<br><small>May 05, 2025</small></p>
+        </div>
+        <div class="related" data-id="3">
+             <img src="images/litart.jpg" alt="Image">
+          <p>“Lingon sa Kahapon”: Una Mirada al Pasado, A Glance at the Past, Kako o Furikaeru”<br><small>May 05, 2025</small></p>
+        </div>
+        <div class="related" data-id="4">
+             <img src="images/sweetplay.jpg" alt="Image">
+          <p>“Sa Pag-Iyak at Pag-Tawa, sa Sinag-Tala ang Korona”<br><small>May 05, 2025</small></p>
+        </div>
+        <div class="related" data-id="5">
+             <img src="images/sweetplay.jpg" alt="Image">
+          <p>“Sa Pag-Iyak at Pag-Tawa, sa Sinag-Tala ang Korona”<br><small>May 05, 2025</small></p>
+        </div>
+      </aside>
+    </main>
+<!--Script for articles-->
+  <script>
+    const articles = {
+  1: {
+    title: "Laban ng de Kuwerdas na Instrumento ngayong LCAF 2025",
+    author: "By Clarisse Mendoza | May 05, 2025",
+    image: "images/instruments.jpg",
+    content: `Nota mula sa iba’t ibang instrumento ang bumalot sa Cavite State University Imus Gymnasium
+    noong ika-13 ng Marso sa huling araw ng Local Culture and Arts Festival 2025. Nagdaos ng
+    patimpalak sa musical instruments sa larangan ng violin, classic guitar, at banduria.
+    
+    Bilang mga kampeon, nasungkit nina Christofer Marky C. Gomez at Jeremie A. Canosa ang
+    ginto sa pagtugtog ng banduria at classic guitar sa kantang “Karatong” na may 95.5% na
+    kabuuang iskor.
+
+    Idineklara namang wagi si John Josel Parole sa pagtugtog ng kantang “Ride Home” ng
+    Ben&Ben gamit ang violin na nakatanggap ng 94% na iskor.
+
+    Sa panghuli, pinarangalan din ng ginto si Adriane Ravil G. Reliosa sa pagtugtog ng classic
+    guitar sa kantang “Kanlungan” ni Noel Cabangon at nakatanggap naman ng 95.5% mula sa
+    mga hurado.`
+    },
+
+  2: {
+    title: "Sa Pag-Iyak at Pag-Tawa, sa Sinag-Tala ang Korona",
+    author: "By Janrae Baluyot | May 05, 2025",
+    image: "images/sweetplay.jpg",
+    content: `Hindi nagpahuli ang Dramatic Arts Contest na ginanap noong ika-11 ng Marso 2025 sa
+    CvSU-Imus Gymnasium. Ipinamalas ng mga aktor mula sa Sinag-Tala Performing Arts Group
+    ang kanilang mga emosyon sa sweet play dialogue na pinamagatang “Oras”.
+
+    Ibinase ang naging dula sa tema ng Local Culture and Arts Festival: “Kultura’t Sining, Tanglaw ng
+    Makabagong Panahon”.
+
+    Matapos naman ang sweet play dialogue ay ipinaabot din ng Sinag-Tala sa puso ng mga
+    manonood ang isang musical na pinamagatang “Kumot”.
+
+    Sa huli ay idineklarang kampyon ang tanging kalahok na Sinag-Tala Performing Arts Group sa
+    kategorya ng sweet play dialogue at sweet play musical. Inaasahan na ang grupo ay ilalaban sa
+    CvSU Main Campus sa Indang.
+
+    Gumanap na mga hurado sina Binibining Joanna Mae Anglit at Ginoong Kenneth Tolosa.
+    Nagkaisa naman ang mga Kabsuhenyo sa pag-tawa at pag-suporta sa mga naging aktor ng
+    dula.`
+  },
+
+  3: {
+    title: "Lingon sa Kahapon",
+    author: "By Mae Adelaine Alarcon | May 05, 2025",
+    image: "images/litart.jpg",
+    content: `Una Mirada al Pasado
+    A Glance at the Past
+    Kako o Furikaeru
+    Makakayanan ko bang kilalanin ang tawag ng aking pinanggalingan?
+    Simula sa mga retratong kinuha noon, naririnig niyo rin ba ang bulong ng kahapon? 
+    Sa isang lingon ay walang pinagbago ang Fuerte de Santiago, kung saan binihag ang minsa’y nagpupunyaging mga libro. Sa bawat hiyaw ng katapangan at natigil na sayawan. Sa mga kabog ng dibdib na puno ng takot at walang hangganang kulog.
+    Sa isang lingon ay ang liwanag ng apoy sa gitna ng hila ng mga kumunoy. Sa isang lingon ay ang mga nagtataasang simbahang sumalo ng bawat luha at bulong, bawat dalangin at pag-asang nawa’y hindi tangayin ng hangin. Sa isang lingon ay ang mga bundok na naging huling hantungan at huling sulok.
+    Sa isang lingon ay mga pangarap na nanatili lamang sa langit at ang kasadlakan na sa aking isip ay hindi mawawaglit.
+    <i> “Sa tingin mo ba ay maaalala nila ang alay nating kinabukasan?” <br><br> “Un mañana que nunca fue prometido…” <br><br> “A tomorrow that was never promised…” <br><br> “Ashita? Ashita.” </i>
+Ang mga huling lakas at hanging inilaan upang ituran ang nawa’y kahihinatnan ng kinabukasan. Sa kabila ng sindak para sa pamanang kalayaan at ngayon, handa ka bang lumingon sa kahapon?
+`
+    },
+    4: {
+    title: "Lingon sa Kahapon",
+    author: "By Mae Adelaine Alarcon | May 05, 2025",
+    image: "images/litart.jpg",
+    content:''
+    },
+    5: {
+    title: "Lingon sa Kahapon",
+    author: "By Mae Adelaine Alarcon | May 05, 2025",
+    image: "images/litart.jpg",
+    content:''
+    },
+};
+
+    function loadArticle(id) {
+    const article = articles[id];
+    const main = document.getElementById("main-article");
+
+    main.classList.add("fade-out");
+
+    setTimeout(() => {
+    document.getElementById("image").src = article.image;
+    document.getElementById("title").textContent = article.title;
+    document.getElementById("author").textContent = article.author;
+    document.getElementById("content").textContent = article.content;
+    main.classList.remove("fade-out");
+  }, 400);
+}
+
+
+    document.querySelectorAll('.related').forEach(item => {
+      item.addEventListener('click', () => {
+        const id = item.getAttribute('data-id');
+        loadArticle(id);
+      });
+    });
+  </script>
 
     <!-- Footer -->
     <footer>

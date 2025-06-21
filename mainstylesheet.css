@@ -1,27 +1,60 @@
 body, html {
-    background-image: url('CvSUciety.jpg');
+    background-image: url('images/CvSUciety.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0;
     padding: 0;
     height: 100%;
-    background-color: rgb(51, 50, 49); 
     overflow-x: hidden;
 }
           
 header {
     display: block;
     position: sticky;
+    background-color: whitesmoke;
+    top: 0;
     color: rgb(213, 213, 129);
     height: 50px;
+    padding: 20px;
     z-index: 10;
     bottom: 20px;
-    background-color: rgba(255, 255, 255, 0.311); 
-    padding: 20px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
-    top: 0;
-    z-index: 1000;
 }
+
+
+.header-nav {
+    display: flex;
+    position: absolute;
+    left: 250px;
+    bottom: 35px;
+
+}
+
+a {
+    text-decoration: none;
+    padding-right: 40px;
+    margin-right: 30px;
+    
+}
+
+a:link, a:visited {
+    color: whitesmoke;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.searchbar {
+    display: flex;
+    position: relative;
+    float: right;  
+    border: none;
+    border-radius: 10px;
+    height: 25px;
+    right: 230px;
+    bottom: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 
 h2 {
     color: black;
@@ -122,28 +155,32 @@ a:link, a:visited {
 
 fieldset {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: bold;
 }
 
 section {
-    display: block;
-    position: relative;
-    padding: 100px;
+  padding: 50px 100px;
+  overflow: hidden;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .column {
-    margin-left: 20px;
-    float: left;
-    align-items: center;
-    width: 30%;
-    padding: 5px;
-    size: 10px;
-    font-style: italic;
+  float: left;
+  width: 30%;
+  margin: 0 1.66%;
+  box-sizing: border-box;
+  font-style: italic;
 }
 
 .column img {
   width: 100%;
-  height: 10%;
-
+  height: 200px;
+  object-fit: cover;
 }
 
 .img-container {
@@ -173,19 +210,6 @@ section {
   opacity: 1;
 }
 
-
-p {
-    color: rgb(107, 107, 107);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-style:normal;
-}
-
-.row {
-    content: "";
-    clear: both;
-    display: table;
-}
-
 footer {
     display: flex;
     position:relative;
@@ -194,9 +218,10 @@ footer {
     align-items: center;    
     bottom: 0;
     width: 100%;
-    background-color: rgb(0, 0, 0);
-    color: rgb(213, 213, 129);
+    background-color: rgba(255, 255, 255, 0.57);
+    color: rgb(255, 255, 255);
     height: 80px;
     padding: 10px;
     z-index: 10;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
