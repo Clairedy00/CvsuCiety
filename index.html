@@ -4,22 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CvSUciety News</title>
-    <link rel="icon" type="image/x-icon" href="icon.png">
+    <link rel="icon" type="image/x-icon" href="images/icon.png">
     <link rel="stylesheet" href="mainstylesheet.css">
 </head>
 
 <body>
     <!--Header area-->
     <header>
-        <h2>CvSUciety</h2>
+        <h2 style="padding-left: 15px;" id = "cvsuciety">CvSUciety</h2>
         <nav class="header-nav">
-            <ul class="nav-buttons">
-            <li> <a href="cvsuciety.html">HOME</a> </li>
-            <li> <a href="latestnews.html">LATEST NEWS</a> </li>
-            <li> <a href="aboutus.html">ABOUT US</a> </li>
-            </ul>
+            <a href="index.html" style="color: black; font-family: 'Century Gothic', 'Avant Garde', sans-serif;">HOME</a>
+            <a href="latestnews.html" style="color: black; font-family: 'Century Gothic', 'Avant Garde', sans-serif;">LATEST NEWS</a>
+            <a href="aboutus.html" style="color: black; font-family: 'Century Gothic', 'Avant Garde', sans-serif;">ABOUT US</a>
         </nav>
-        <input class="searchbar" type="text" placeholder="SEARCH...">
+            <input class="searchbar" type="text" placeholder="Search" />
     </header>
 
     <!-- Main Content area-->
@@ -33,38 +31,45 @@
     </fieldset>
 
     <!--articles-->
-    <section class="row">
-        <article class="column">
+   <section class="row">
+        <a href="latestnews.html" class="column">
+            <article>
             <div class="img-container">
-            <img src="photo1.jpg" alt="1">
-            <h3> Tagisan ng obra, kulay, at talento sa LCAF 2025 </h3>
-            <br>
-            <p> 2 DAYS AGO </p>
+                <img src="images/art1.jpeg" alt="1">
+                <h3>Tagisan ng obra, kulay, at talento sa LCAF 2025</h3>
+                <br>
+                <p>2 DAYS AGO</p>
             </div>
-        </article>
-        <article class="column">
+            </article>
+        </a>
+        <a href="latestnews.html" class="column">
+            <article>
             <div class="img-container">
-            <img src="photo2.jpg" alt="2">
-            <h3> Laban ng de Kuwerdas na Instrumento ngayong LCAF 2025 </h3>
-            <br>
-            <p>2 DAYS AGO</p>
+                <img src="images/instruments.JPG" alt="2">
+                <h3>Laban ng de Kuwerdas na Instrumento ngayong LCAF 2025</h3>
+                <br>
+                <p>2 DAYS AGO</p>
             </div>
-        </article>
-        <article class="column">
+            </article>
+        </a>
+
+        <a href="latestnews.html" class="column">
+            <article>
             <div class="img-container">
-            <img src="photo3.jpg" alt="image">
-            <h3> Sa Pag-Iyak at Pag-Tawa, sa Sinag-Tala ang Korona </h3>
-            <br>
-            <p>2 DAYS AGO</p>
+                <img src="images/pencildrawing.jpg" alt="3">
+                <h3>Sa Pag-Iyak at Pag-Tawa, sa Sinag-Tala ang Korona</h3>
+                <br>
+                <p>2 DAYS AGO</p>
             </div>
-        </article>
+            </article>
+        </a>
     </section>
+
 
     <!-- Footer -->
     <footer>
         <p>&copy; CvSUciety - Imus Campus</p></br>
 
     </footer>
-    <script src="script.js"></script>
 </body>
 </html>
